@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(136, 104, 75);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .custom-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .custom-btn:hover {
+    background-color: saddlebrown;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .btn-4 {
+    position: relative;
+  }
+  
+  .btn-4:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-4:hover:after {
+    width: 100%;
+  }
+  
+  .Education,
+  .Experience,
+  .More {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+  }
+  
+  .Education h2,
+  .Experience h2,
+  .More h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Education ul,
+  .Experience ul,
+  .More ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Education li,
+  .Experience li,
+  .More li {
+    margin-bottom: 10px;
+  }
+  
+  .Education .degree,
+  .Experience .title,
+  .More .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .Education .school,
+  .Experience .company,
+  .More .date {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .More h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .More ul.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .More ul.skills li {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .More ul.volunteer {
+    margin-top: 20px;
+  }
+  
+  .More ul.volunteer li {
+    margin-bottom: 10px;
+  }
+  
+  .Hero {
+    width: 100%;
+    height: 400px;
+    background-image: url(https://images.unsplash.com/photo-1526667111478-3a174675a21d);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .Hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px
+  }
